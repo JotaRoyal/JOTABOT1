@@ -594,7 +594,7 @@ const {
   ‣ Número de chats: *${totalchat.length}*
   ‣ Grupo oficial
   • _${Wa1}_
-  ‣ Suscribete
+  ‣ Sígueme
   _${Ig}_
   ────────────────
   ┏━━━━━━━━━━━━━━━━━━━━
