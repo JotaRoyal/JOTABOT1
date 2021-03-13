@@ -267,7 +267,7 @@ const {
 			  if (anu.action == 'add') {
 				  num = anu.participants[0]
 				  teks = `Hola @${num.split('@')[0]}
-  Bienvenid@ a 
+  Bienvenid@ a
   *${mdata.subject}*
   ────────────────
   
@@ -276,7 +276,7 @@ const {
 				  Lxa.sendMessage(mdata.id, teks, MessageType.text, { contextInfo: {"mentionedJid": [num]}})
 			  } else if (anu.action == 'remove') {
 				  num = anu.participants[0]
-				  teks = `Que bueno que te fuiste @${num.split('@')[0]} no te queriamos 👋`
+				  teks = `Qué bueno que te fuiste @${num.split('@')[0]} no te queríamos 👋`
 				  Lxa.sendMessage(mdata.id, teks, MessageType.text, {contextInfo: {"mentionedJid": [num]}})
 			  }
 		  } catch (e) {
