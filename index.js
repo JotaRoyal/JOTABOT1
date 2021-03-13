@@ -270,14 +270,7 @@ const {
   Bienvenid@ a 
   *${mdata.subject}*
   ────────────────
-  ┏━━━━━━━━━━━━━━━━━━━━
-  ┃──────〘  *Intro* 〙───────
-  ┃━━━━━━━━━━━━━━━━━━━━
-  ┠⊷️ *Nombre* :
-  ┠⊷️ *Edad* :
-  ┠⊷️ *Lugar de nacimiento* :
-  ┠⊷️ *Género* :
-  ┗━━━━━━━━━━━━━━━━━━━━
+  
   
   Usa ${prefix}verify para verificarte y poder usar el bot.`
 				  Lxa.sendMessage(mdata.id, teks, MessageType.text, { contextInfo: {"mentionedJid": [num]}})
@@ -325,7 +318,7 @@ const {
 	ferr: 'Lo siento ocurrio un error',
 	limitend: 'El tiempo se agoto',
 	error: {
-	stick: 'Intentalo al rato :(',
+	stick: 'Intentalo de nuevo',
 	Iv: 'Error en el link'
 	},
 	only: {
@@ -476,7 +469,7 @@ const {
 	   for (let lmt of _limit) {
 	   if (lmt.id === sender) {
 		limitCounts = limitawal - lmt.limit
-	   if (limitCounts <= 0) return Lxa.sendMessage(from, `Maaf limit kamu telah habis, silahkan lakukan pembelian ulang`, text,{ quoted: mek})
+	   if (limitCounts <= 0) return Lxa.sendMessage(from, `Lo sentimos, su límite se ha agotado, repita la orden`, text,{ quoted: mek})
 		Lxa.sendMessage(from, `〘  *Limit* 〙
   Sisa limit anda : *${limitCounts}*
   _Penggunaan limit hanya pada fitur-fitur tertentu_`, text, { quoted : mek})
@@ -3441,7 +3434,7 @@ const {
 						  mentions(teks, mentioned, true)
 						  Lxa.groupRemove(from, mentioned)
 					  } else {
-						  mentions(`Se elimino a un joto : @${mentioned[0].split('@')[0]}`, mentioned, true)
+						  mentions(`Se elimino a un integrante : @${mentioned[0].split('@')[0]}`, mentioned, true)
 						  Lxa.groupRemove(from, mentioned)
 					  }
 					  break
@@ -3451,7 +3444,7 @@ const {
 					case 'listadmin':
 					  case 'adminlist':
 					  if (!isGroup) return reply(mess.only.group)
-					  teks = `Lista admin de admins facheros *${groupMetadata.subject}*\nTotal : ${groupAdmins.length}\n\n`
+					  teks = `Lista admin de admins superguays *${groupMetadata.subject}*\nTotal : ${groupAdmins.length}\n\n`
 					  no = 0
 					  for (let admon of groupAdmins) {
 						  no += 1
