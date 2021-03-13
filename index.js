@@ -276,7 +276,7 @@ const {
 				  Lxa.sendMessage(mdata.id, teks, MessageType.text, { contextInfo: {"mentionedJid": [num]}})
 			  } else if (anu.action == 'remove') {
 				  num = anu.participants[0]
-				  teks = `Qué bueno que te fuiste @${num.split('@')[0]} no te queríamos 👋`
+				  teks = `Que bueno que te fuiste @${num.split('@')[0]} no te queríamos 👋`
 				  Lxa.sendMessage(mdata.id, teks, MessageType.text, {contextInfo: {"mentionedJid": [num]}})
 			  }
 		  } catch (e) {
@@ -1938,7 +1938,7 @@ const {
   //---Tantangan
 	case 'dare':
   const der = dare[Math.floor(Math.random() * dare.length)]
-  Lxa.sendMessage(from, `‣ *Mentira*\n${der}`, text, {
+  Lxa.sendMessage(from, `‣ *Curiosidad*\n${der}`, text, {
 	quoted: mek
   })
   break
