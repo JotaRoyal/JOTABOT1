@@ -531,7 +531,7 @@ const {
   
   
   //--Auto respon
-  if(budy.match('Pato')){
+  if(budy.match('JotaRoyal')){
   result = fs.readFileSync(`./temp/stick/calla.webp`)
 	Lxa.sendMessage(from, result, sticker, {
   quoted: mek
