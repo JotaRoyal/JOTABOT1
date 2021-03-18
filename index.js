@@ -3591,7 +3591,7 @@ const {
   reply(hasil)
 	console.log(color('[REGISTER]'), color(time, 'yellow'), 'Name:', color(namaUser, 'cyan'), 'Age:', color(umurUser, 'cyan'), 'Serial:', color(serialUser, 'cyan'))
   }
-  tm = `verificación completa usa ${prefix}Menu para ver la lista`
+  tm = `verificación completa usa ${prefix}menu para ver la lista`
   reply(tm)
   break
   
