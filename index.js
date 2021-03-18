@@ -2790,7 +2790,7 @@ const {
 							  })
 							  .on('end', function () {
 								  console.log('Finish')
-								  exec(`webpmux -set exif ${addMetadata('Lexa', 'Mrf.zvx')} ${ran} -o ${ran}`, async (error) => {
+								  exec(`webpmux -set exif ${addMetadata('JotaRoyal', 'Mr.Jota')} ${ran} -o ${ran}`, async (error) => {
 									  if (error) return reply(mess.error.stick)
 									  Lxa.sendMessage(from, fs.readFileSync(ran), sticker, {quoted: mek})
 									  fs.unlinkSync(media)	
@@ -2821,7 +2821,7 @@ const {
 							  })
 							  .on('end', function () {
 								  console.log('Finish')
-								  exec(`webpmux -set exif ${addMetadata('Lexa', 'Mrf.zvx')} ${ran} -o ${ran}`, async (error) => {
+								  exec(`webpmux -set exif ${addMetadata('JotaRoyal', 'Mr.Jota')} ${ran} -o ${ran}`, async (error) => {
 									  if (error) return reply(mess.error.stick)
 									  Lxa.sendMessage(from, fs.readFileSync(ran), sticker, {quoted: mek})
 									  fs.unlinkSync(media)
@@ -2850,7 +2850,7 @@ const {
 							  exec(`ffmpeg -i ${ranp} -vcodec libwebp -filter:v fps=fps=20 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${ranw}`, (err) => {
 								  fs.unlinkSync(ranp)
 								  if (err) return reply(mess.error.stick)
-								  exec(`webpmux -set exif ${addMetadata('Lexa', 'Mrf.zvx')} ${ranw} -o ${ranw}`, async (error) => {
+								  exec(`webpmux -set exif ${addMetadata('JotaRoyal', 'Mr.Jota')} ${ranw} -o ${ranw}`, async (error) => {
 									  if (error) return reply(mess.error.stick)
 									  Lxa.sendMessage(from, fs.readFileSync(ranw), sticker, {quoted: mek})
 									  fs.unlinkSync(ranw)
@@ -3285,7 +3285,7 @@ const {
 					  exec(`wget ${anu.result} -O ${ranp} && ffmpeg -i ${ranp} -vcodec libwebp -filter:v fps=fps=20 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${rano}`, (err) => {
 						  fs.unlinkSync(ranp)
 						  if (err) return reply(mess.error.stick)
-						  exec(`webpmux -set exif ${addMetadata('Lexa', 'Mrf.zvx')} ${rano} -o ${rano}`, async (error) => {
+						  exec(`webpmux -set exif ${addMetadata('JotaRoyal', 'Mr.Jota')} ${rano} -o ${rano}`, async (error) => {
 							  if (error) return reply(mess.error.stick)
 							  Lxa.sendMessage(from, fs.readFileSync(rano), sticker, {quoted: mek})
 							  fs.unlinkSync(rano)
