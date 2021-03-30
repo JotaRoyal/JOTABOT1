@@ -1981,7 +1981,6 @@ const {
   data = await fetchJson(`https://api.vhtear.com/branly?query=${teks}&apikey=${vKey}`)
   hasil = data.result.data
   reply(hasil)
-  await limitAdd(mess.ferr)
   } catch {
 	reply(mess.ferr)
   }
