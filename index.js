@@ -3541,9 +3541,9 @@ const {
 					  if (args.length < 1) return reply(`Hola ${pushname}`)
 					  teks = body.slice(6)
 					  try { 
-					  anu = await fetchJson(`https://api.xteam.xyz/simsimi?kata=${teks}&APIKEY=${xKey}`, {method: 'get'})
+					  anu = await fetchJson(`https://simsumi.herokuapp.com/api?text=${teks}`, {method: 'get'})
 					  if (anu.error) return reply('Escribe el texto bien')
-					  reply(anu.jawaban)
+					  reply(anu.success)
 					  } catch {
 						reply(mess.ferr)
 					  }
@@ -3555,7 +3555,7 @@ const {
 					  try { 
 					  anu = await fetchJson(`https://simsumi.herokuapp.com/api?text=${teks}`, {method: 'get'})
 					  if (anu.error) return reply('No lo se')
-					  reply(anu.jawaban)
+					  reply(anu.success)
 					  } catch {
 						reply(mess.ferr)
 					  }
